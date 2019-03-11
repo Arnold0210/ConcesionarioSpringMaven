@@ -1,8 +1,8 @@
-A:\eclipse-workspace-foton\concesionario\src\main\java\model\entities\factory\EntityManagerfactory.java
-A:\eclipse-workspace-foton\concesionario\src\main\java\model\entities\factory\interfaces\EntityManagerFactory.java
-A:\eclipse-workspace-foton\concesionario\src\main\java\model\dtos\Cliente.java
-A:\eclipse-workspace-foton\concesionario\src\main\java\model\dtos\Venta.java
-A:\eclipse-workspace-foton\concesionario\src\main\java\model\DAOs\interfaces\ClienteDao.java
-A:\eclipse-workspace-foton\concesionario\src\main\java\model\DAOs\interfaces\VentaDao.java
-A:\eclipse-workspace-foton\concesionario\src\main\java\model\dtos\Auto.java
-A:\eclipse-workspace-foton\concesionario\src\main\java\model\DAOs\interfaces\AutoDao.java
+C:\Users\sala1\git\ConcesionarioSpringMaven\src\main\java\model\daos\interfaces\AutoDao.java
+C:\Users\sala1\git\ConcesionarioSpringMaven\src\main\java\model\entities\factory\EntityManagerfactory.java
+C:\Users\sala1\git\ConcesionarioSpringMaven\src\main\java\model\daos\interfaces\VentaDao.java
+C:\Users\sala1\git\ConcesionarioSpringMaven\src\main\java\model\dtos\Venta.java
+C:\Users\sala1\git\ConcesionarioSpringMaven\src\main\java\model\dtos\Auto.java
+C:\Users\sala1\git\ConcesionarioSpringMaven\src\main\java\model\daos\interfaces\ClienteDao.java
+C:\Users\sala1\git\ConcesionarioSpringMaven\src\main\java\model\entities\factory\interfaces\EntityManagerFactory.java
+C:\Users\sala1\git\ConcesionarioSpringMaven\src\main\java\model\dtos\Cliente.java
