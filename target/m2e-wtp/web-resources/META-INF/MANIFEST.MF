@@ -1,5 +1,9 @@
 Manifest-Version: 1.0
+<<<<<<< HEAD
 Built-By: sala1
+=======
+Built-By: arnoldherrera
+>>>>>>> 6a086aa86d2694c2d9080d3c8c97261a05184bca
 Build-Jdk: 1.8.0_111
 Created-By: Maven Integration for Eclipse
 
