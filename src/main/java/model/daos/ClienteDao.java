@@ -68,12 +68,52 @@ public class ClienteDao implements model.daos.interfaces.ClienteDaoInterface {
 
 	@Override
 	public void actualizarCliente(String apellido1, String apellido2, String idCliente) {
-
+		try {
+			em.getTransaction().begin();
+			Cliente cliente = this.consultarCliente(idCliente);
+			cliente.setApellido1(apellido1);
+			cliente.setApellido2(apellido2);
+			em.merge(cliente);
+			em.getTransaction().commit();
+		} catch (PersistenceException e) {
+			em.getTransaction().rollback();
+			Throwable th = e.getCause();
+			Logger.getLogger(ClienteDao.class.getName()).log(Level.INFO,
+					"ClienteDao  persistence exception EXCEPTION STRING: {0}" + e.toString());
+			Logger.getLogger(ClienteDao.class.getName()).log(Level.INFO,
+					"ClienteDao persistence exception THROWABLE MESSAGE: {0}" + th.toString());
+			Logger.getLogger(ClienteDao.class.getName()).log(Level.INFO,
+					"ClienteDao persistence exceptions THROWABLE STRING: {0}" + th.toString());
+		} finally {
+			em.close();
+		}
 	}
 
 	@Override
 	public void actualizarCliente(String nombre1, String nombre2, String apellido1, String apellido2,
 			String idCliente) {
+				try {
+			em.getTransaction().begin();
+			Cliente cliente = this.consultarCliente(idCliente);
+			cliente.setNombre1(nombre1);
+			cliente.setNombre2(nombre2);
+			cliente.setApellido1(apellido1);
+			cliente.setApellido2(apellido2);
+			em.merge(cliente);
+			em.getTransaction().commit();
+		} catch (PersistenceException e) {
+			em.getTransaction().rollback();
+			Throwable th = e.getCause();
+			Logger.getLogger(ClienteDao.class.getName()).log(Level.INFO,
+					"ClienteDao  persistence exception EXCEPTION STRING: {0}" + e.toString());
+			Logger.getLogger(ClienteDao.class.getName()).log(Level.INFO,
+					"ClienteDao persistence exception THROWABLE MESSAGE: {0}" + th.toString());
+			Logger.getLogger(ClienteDao.class.getName()).log(Level.INFO,
+					"ClienteDao persistence exceptions THROWABLE STRING: {0}" + th.toString());
+		} finally {
+			em.close();
+		}
+				
 
 	}
 
