@@ -24,11 +24,11 @@ public class ClienteDao implements model.daos.interfaces.ClienteDaoInterface {
 			em.getTransaction().rollback();
 			Throwable th = e.getCause();
 			Logger.getLogger(ClienteDao.class.getName()).log(Level.INFO,
-					"ClienteDao  persistence exception EXCEPTION STRING: {0}" + e.toString());
+					"ClienteDao crear persistence exception EXCEPTION STRING: {0}" + e.toString());
 			Logger.getLogger(ClienteDao.class.getName()).log(Level.INFO,
-					"ClienteDao persistence exception THROWABLE MESSAGE: {0}" + th.toString());
+					"ClienteDao crear persistence exception THROWABLE MESSAGE: {0}" + th.toString());
 			Logger.getLogger(ClienteDao.class.getName()).log(Level.INFO,
-					"ClienteDao persistence exceptions THROWABLE STRING: {0}" + th.toString());
+					"ClienteDao crear persistence exceptions THROWABLE STRING: {0}" + th.toString());
 		} finally {
 			em.close();
 		}
@@ -55,11 +55,11 @@ public class ClienteDao implements model.daos.interfaces.ClienteDaoInterface {
 			em.getTransaction().rollback();
 			Throwable th = e.getCause();
 			Logger.getLogger(ClienteDao.class.getName()).log(Level.INFO,
-					"ClienteDao  persistence exception EXCEPTION STRING: {0}" + e.toString());
+					"ClienteDao  actualizar apellido persistence exception EXCEPTION STRING: {0}" + e.toString());
 			Logger.getLogger(ClienteDao.class.getName()).log(Level.INFO,
-					"ClienteDao persistence exception THROWABLE MESSAGE: {0}" + th.toString());
+					"ClienteDao actualizar apellido persistence exception THROWABLE MESSAGE: {0}" + th.toString());
 			Logger.getLogger(ClienteDao.class.getName()).log(Level.INFO,
-					"ClienteDao persistence exceptions THROWABLE STRING: {0}" + th.toString());
+					"ClienteDao actualizar apellido persistence exceptions THROWABLE STRING: {0}" + th.toString());
 		} finally {
 			em.close();
 		}
@@ -79,11 +79,11 @@ public class ClienteDao implements model.daos.interfaces.ClienteDaoInterface {
 			em.getTransaction().rollback();
 			Throwable th = e.getCause();
 			Logger.getLogger(ClienteDao.class.getName()).log(Level.INFO,
-					"ClienteDao  persistence exception EXCEPTION STRING: {0}" + e.toString());
+					"ClienteDao actualizar apellidos persistence exception EXCEPTION STRING: {0}" + e.toString());
 			Logger.getLogger(ClienteDao.class.getName()).log(Level.INFO,
-					"ClienteDao persistence exception THROWABLE MESSAGE: {0}" + th.toString());
+					"ClienteDao actualizar apellidos persistence exception THROWABLE MESSAGE: {0}" + th.toString());
 			Logger.getLogger(ClienteDao.class.getName()).log(Level.INFO,
-					"ClienteDao persistence exceptions THROWABLE STRING: {0}" + th.toString());
+					"ClienteDao actualizar apellidos persistence exceptions THROWABLE STRING: {0}" + th.toString());
 		} finally {
 			em.close();
 		}
@@ -92,13 +92,80 @@ public class ClienteDao implements model.daos.interfaces.ClienteDaoInterface {
 	@Override
 	public void actualizarCliente(String nombre1, String nombre2, String apellido1, String apellido2,
 			String idCliente) {
-				try {
+		try {
 			em.getTransaction().begin();
 			Cliente cliente = this.consultarCliente(idCliente);
 			cliente.setNombre1(nombre1);
 			cliente.setNombre2(nombre2);
 			cliente.setApellido1(apellido1);
 			cliente.setApellido2(apellido2);
+			em.merge(cliente);
+			em.getTransaction().commit();
+		} catch (PersistenceException e) {
+			em.getTransaction().rollback();
+			Throwable th = e.getCause();
+			Logger.getLogger(ClienteDao.class.getName()).log(Level.INFO,
+					"ClienteDao actualizar fullname persistence exception EXCEPTION STRING: {0}" + e.toString());
+			Logger.getLogger(ClienteDao.class.getName()).log(Level.INFO,
+					"ClienteDao actualizar fullname persistence exception THROWABLE MESSAGE: {0}" + th.toString());
+			Logger.getLogger(ClienteDao.class.getName()).log(Level.INFO,
+					"ClienteDao actualizar fullname persistence exceptions THROWABLE STRING: {0}" + th.toString());
+		} finally {
+			em.close();
+		}
+
+	}
+
+	@Override
+	public void actualizarTelefonoCliente(String telefono, String idCliente) {
+		try {
+			em.getTransaction().begin();
+			Cliente cliente = this.consultarCliente(idCliente);
+			cliente.setTelefono(telefono);
+			em.merge(cliente);
+			em.getTransaction().commit();
+		} catch (PersistenceException e) {
+			em.getTransaction().rollback();
+			Throwable th = e.getCause();
+			Logger.getLogger(ClienteDao.class.getName()).log(Level.INFO,
+					"ClienteDao actualizar telefono persistence exception EXCEPTION STRING: {0}" + e.toString());
+			Logger.getLogger(ClienteDao.class.getName()).log(Level.INFO,
+					"ClienteDao actualizar telefono persistence exception THROWABLE MESSAGE: {0}" + th.toString());
+			Logger.getLogger(ClienteDao.class.getName()).log(Level.INFO,
+					"ClienteDao actualizar telefono persistence exceptions THROWABLE STRING: {0}" + th.toString());
+		} finally {
+			em.close();
+		}
+	}
+
+	@Override
+	public void actualizarCorreoCliente(String correo, String idCliente) {
+		try {
+			em.getTransaction().begin();
+			Cliente cliente = this.consultarCliente(idCliente);
+			cliente.setCorreo(correo);
+			em.merge(cliente);
+			em.getTransaction().commit();
+		} catch (PersistenceException e) {
+			em.getTransaction().rollback();
+			Throwable th = e.getCause();
+			Logger.getLogger(ClienteDao.class.getName()).log(Level.INFO,
+					"ClienteDao actualizar correo persistence exception EXCEPTION STRING: {0}" + e.toString());
+			Logger.getLogger(ClienteDao.class.getName()).log(Level.INFO,
+					"ClienteDao actualizar correo persistence exception THROWABLE MESSAGE: {0}" + th.toString());
+			Logger.getLogger(ClienteDao.class.getName()).log(Level.INFO,
+					"ClienteDao actualizar correo persistence exceptions THROWABLE STRING: {0}" + th.toString());
+		} finally {
+			em.close();
+		}
+	}
+
+	@Override
+	public void actualizarContrasenaCliente(String contrasena, String idCliente) {
+		try {
+			em.getTransaction().begin();
+			Cliente cliente = this.consultarCliente(idCliente);
+			cliente.setContrasena(contrasena);
 			em.merge(cliente);
 			em.getTransaction().commit();
 		} catch (PersistenceException e) {
@@ -113,17 +180,6 @@ public class ClienteDao implements model.daos.interfaces.ClienteDaoInterface {
 		} finally {
 			em.close();
 		}
-				
-
-	}
-
-	@Override
-	public void actualizarTelefonoCliente(String telefono, String idCliente) {
-
-	}
-
-	@Override
-	public void actualizarCorreoCliente(String correo, String idCliente) {
 
 	}
 

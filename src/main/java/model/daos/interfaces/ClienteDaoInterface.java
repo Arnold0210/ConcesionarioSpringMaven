@@ -7,14 +7,16 @@ public interface ClienteDaoInterface {
 
 	public Cliente consultarCliente(String idCliente);
 
-	public void actualizarCliente(String apellido,String idCliente);
+	public void actualizarCliente(String apellido, String idCliente);
 
-	public void actualizarCliente(String apellido1, String apellido2,String idCliente);
+	public void actualizarCliente(String apellido1, String apellido2, String idCliente);
 
-	public void actualizarCliente(String nombre1, String nombre2, String apellido1, String apellido2,String idCliente);
+	public void actualizarCliente(String nombre1, String nombre2, String apellido1, String apellido2, String idCliente);
 
-	public void actualizarTelefonoCliente(String telefono,String idCliente);
-	
-	public void actualizarCorreoCliente(String correo,String idCliente);
+	public void actualizarTelefonoCliente(String telefono, String idCliente);
+
+	public void actualizarCorreoCliente(String correo, String idCliente);
+
+	public void actualizarContrasenaCliente(String contrasena, String idCliente);
 
 }
