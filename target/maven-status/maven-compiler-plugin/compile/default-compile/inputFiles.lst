@@ -3,6 +3,7 @@ C:\Users\sala1\git\ConcesionarioSpringMaven\src\main\java\model\entities\factory
 C:\Users\sala1\git\ConcesionarioSpringMaven\src\main\java\model\daos\interfaces\VentaDao.java
 C:\Users\sala1\git\ConcesionarioSpringMaven\src\main\java\model\dtos\Venta.java
 C:\Users\sala1\git\ConcesionarioSpringMaven\src\main\java\model\dtos\Auto.java
+C:\Users\sala1\git\ConcesionarioSpringMaven\src\main\java\model\daos\ClienteDao.java
 C:\Users\sala1\git\ConcesionarioSpringMaven\src\main\java\model\daos\interfaces\ClienteDao.java
 C:\Users\sala1\git\ConcesionarioSpringMaven\src\main\java\model\entities\factory\interfaces\EntityManagerFactory.java
 C:\Users\sala1\git\ConcesionarioSpringMaven\src\main\java\model\dtos\Cliente.java
