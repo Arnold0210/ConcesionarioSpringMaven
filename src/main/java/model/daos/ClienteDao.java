@@ -16,19 +16,19 @@ public class ClienteDao implements model.daos.interfaces.ClienteDaoInterface {
 
 	@Override
 	public void crearCliente(Cliente cliente) {
+		
 		try {
 			em.getTransaction().begin();
 			em.persist(cliente);
 			em.getTransaction().commit();
+			Logger.getLogger(getClass()).log(Level.INFO, "Cliente almacenado en base de datos");
 		} catch (PersistenceException e) {
 			em.getTransaction().rollback();
 			Throwable th = e.getCause();
-			Logger.getLogger(ClienteDao.class.getName()).log(Level.INFO,
-					"ClienteDao crear persistence exception EXCEPTION STRING: {0}" + e.toString());
-			Logger.getLogger(ClienteDao.class.getName()).log(Level.INFO,
-					"ClienteDao crear persistence exception THROWABLE MESSAGE: {0}" + th.toString());
-			Logger.getLogger(ClienteDao.class.getName()).log(Level.INFO,
-					"ClienteDao crear persistence exceptions THROWABLE STRING: {0}" + th.toString());
+			Logger.getLogger(getClass()).log(Level.ERROR,"Error when saving 'Cliente' in Database EXCEPTION STRING: {0}"+ e.getMessage());
+			Logger.getLogger(getClass()).log(Level.TRACE,"EXCEPTION STRING: {0}"+e.toString());
+			Logger.getLogger(ClienteDao.class.getName()).log(Level.ERROR,
+					"Error when saving 'Cliente' in Database  THROWABLE MESSAGE: {0}" + th.toString());
 		} finally {
 			em.close();
 		}
