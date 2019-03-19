@@ -1,0 +1,4 @@
+2019-03-13 10:15:53 INFO  HelloExample:23 - This is info : mkyong
+2019-03-13 10:15:53 WARN  HelloExample:26 - This is warn : mkyong
+2019-03-13 10:15:53 ERROR HelloExample:27 - This is error : mkyong
+2019-03-13 10:15:53 FATAL HelloExample:28 - This is fatal : mkyong
