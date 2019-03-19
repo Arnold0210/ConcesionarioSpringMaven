@@ -14,7 +14,7 @@ public class ClienteController {
 
 	@RequestMapping(method = RequestMethod.GET, value = "crearCliente.html")
 	public String crearCliente(HttpServletRequest req, SessionStatus status, ModelMap map) {
-		map.put("mensajeCliente", "Pasé por el controlaor de persona" + req.getParameter("nombre"));
+		map.put("mensajeCliente", "Pasé por el controlador de persona" + req.getParameter("nombre"));
 		return "cliente_crear";
 	}
 }
