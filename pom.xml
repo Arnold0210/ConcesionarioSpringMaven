@@ -9,7 +9,7 @@
 	<name>concesionario Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<properties>
-		<spring.version>5.1.5.RELEASE</spring.version>
+		<spring.version>3.1.1.RELEASE</spring.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -21,6 +21,11 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
 

@@ -4,6 +4,8 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceException;
 import javax.persistence.TypedQuery;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
@@ -16,15 +18,19 @@ public class ClienteDao implements model.daos.interfaces.ClienteDaoInterface {
 
 	@Override
 	public void crearCliente(Cliente cliente) {
+		Log log = LogFactory.getLog(this.getClass());
 		
 		try {
 			em.getTransaction().begin();
 			em.persist(cliente);
 			em.getTransaction().commit();
+			log.info("Cliente almacenado en base de datos");
 			Logger.getLogger(getClass()).log(Level.INFO, "Cliente almacenado en base de datos");
 		} catch (PersistenceException e) {
 			em.getTransaction().rollback();
 			Throwable th = e.getCause();
+			log.error("Error when saving 'Cliente' in Database EXCEPTION STRING: {0}"+ e.getMessage());
+			log.trace("EXCEPTION STRING: {0}"+e.toString());
 			Logger.getLogger(getClass()).log(Level.ERROR,"Error when saving 'Cliente' in Database EXCEPTION STRING: {0}"+ e.getMessage());
 			Logger.getLogger(getClass()).log(Level.TRACE,"EXCEPTION STRING: {0}"+e.toString());
 			Logger.getLogger(ClienteDao.class.getName()).log(Level.ERROR,
