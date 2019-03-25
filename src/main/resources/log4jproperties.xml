@@ -71,8 +71,8 @@
 		<appender-ref ref="debug_file" />
 	</category>
 	
-	<category name="logs.logerrorfile1">
-		<appender-ref ref="error_file1" />
+	<category name="logs.warn">
+		<appender-ref ref="warn" />
 	</category>
  
 	<category name="logs.logerrorfile2">

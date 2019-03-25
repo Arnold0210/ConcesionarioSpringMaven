@@ -1,11 +1,11 @@
-package logs.logerrorfile1;
+package logs.logerror;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 import logs.interfaces.Logger;
 
-public class LogErrorFile1 implements Logger {
+public class LogError implements Logger {
 
 	@Override
 	public void log(String msg) {
