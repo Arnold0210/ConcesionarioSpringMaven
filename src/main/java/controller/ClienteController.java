@@ -12,9 +12,9 @@ import org.springframework.web.bind.support.SessionStatus;
 @RequestMapping("/")
 public class ClienteController {
 
-	@RequestMapping(method = RequestMethod.GET, value = "crearCliente.html")
+	@RequestMapping(method = RequestMethod.POST, value = "crearCliente.html")
 	public String crearCliente(HttpServletRequest req, SessionStatus status, ModelMap map) {
-		map.put("mensajeCliente", "Pasé por el controlador de persona" + req.getParameter("nombre"));
+		map.put("mensajeCliente", "Pase por el controlador de persona" + req.getParameter("nombre"));
 		return "cliente_crear";
 	}
 }
