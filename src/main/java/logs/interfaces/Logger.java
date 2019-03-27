@@ -1,5 +1,5 @@
 package logs.interfaces;
 
 public interface Logger {
-	public void log(String msg);
+	public void log(String msg,Class<?> clazz);
 }

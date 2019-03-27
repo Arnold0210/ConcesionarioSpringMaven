@@ -1,12 +1,20 @@
 package Tester;
 
-
 import org.junit.Test;
+
+import logs.factory.LoggerFactory;
+import logs.interfaces.Logger;
 
 public class LoggerTest {
 
-	@Test
+	
 	public void testCrearCliente() {
-		
+		LoggerFactory logf = new LoggerFactory();
+		Logger logger = logf.getLogger(LoggerFactory.DEBUG);
+		logger.log("DebugGGGER",getClass());
+	}
+	public static void main(String[] args) {
+		LoggerTest lt = new LoggerTest();
+		lt.testCrearCliente();
 	}
 }
