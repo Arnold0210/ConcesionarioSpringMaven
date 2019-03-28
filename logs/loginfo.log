@@ -1,0 +1,4 @@
+-- [INFO ]|2019-03-27 mié, 27 mar 19:44:21.848|File: LogInfo.java|[LogInfo - log:line 15]|[main] Message: hola
+-- [ERROR]|2019-03-27 mié, 27 mar 19:44:22.026|File: LogError.java|[LogError - log:line 15]|[main] Message: CRISTHIAN
+-- [WARN ]|2019-03-27 mié, 27 mar 19:44:22.081|File: LogWarn.java|[LogWarn - log:line 15]|[main] Message: BRAYAN Y KAREN 
+-- [FATAL]|2019-03-27 mié, 27 mar 19:44:22.132|File: LogFatal.java|[LogFatal - log:line 15]|[main] Message: se aman
