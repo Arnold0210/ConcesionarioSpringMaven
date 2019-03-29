@@ -31,6 +31,6 @@ public class LoggerFactory {
 		}else if (tipoLog == TRACE) {
 			return new LogTrace();
 		}
-		return new LogFatal();
+		return null;
 	}
 }

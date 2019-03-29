@@ -10,7 +10,7 @@ public class LogFatal implements Logger {
 
 	@Override
 	public void log(String msg, Class<?> clazz) {
-		DOMConfigurator.configure("src/main/resources/dtds/log4j.xml");
+		DOMConfigurator.configure("src/main/resources/dtds/log4j.dtd");
 		Log log = LogFactory.getLog(clazz);
 		log.fatal(msg);
 	}
