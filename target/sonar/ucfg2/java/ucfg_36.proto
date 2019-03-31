@@ -1,0 +1,29 @@
+
+_com.vatas.model.dtos.Auto#removeVenta(Lcom/vatas/model/dtos/Venta;)Lcom/vatas/model/dtos/Venta;
+__unknown_file ("1*ı
+1f
+\A:\eclipse-workspace-foton\concesionario_spring\src\main\java\com\vatas\model\dtos\Auto.javas s(‚ﬂ
+f
+\A:\eclipse-workspace-foton\concesionario_spring\src\main\java\com\vatas\model\dtos\Auto.javas s(
+%0java.util.Set"4com.vatas.model.dtos.Auto#getVentas()Ljava/util/Set;*
+com.vatas.model.dtos.Auto2getVentas()ˇ¸
+f
+\A:\eclipse-workspace-foton\concesionario_spring\src\main\java\com\vatas\model\dtos\Auto.javas s(
+%1boolean")java.util.Set#remove(Ljava/lang/Object;)Z*
+
+%0java.util.Set*%
+#
+ventacom.vatas.model.dtos.Venta2remove(Ljava/lang/Object;)éã
+f
+\A:\eclipse-workspace-foton\concesionario_spring\src\main\java\com\vatas\model\dtos\Auto.javat t(
+
+%2void"@com.vatas.model.dtos.Venta#setAuto(Lcom/vatas/model/dtos/Auto;)V*%
+#
+ventacom.vatas.model.dtos.Venta*
+""2$setAuto(Lcom/vatas/model/dtos/Auto;)"è
+f
+\A:\eclipse-workspace-foton\concesionario_spring\src\main\java\com\vatas\model\dtos\Auto.javav v(%
+#
+ventacom.vatas.model.dtos.Venta:#
+ventacom.vatas.model.dtos.VentaB
+com.vatas.model.dtos.Auto

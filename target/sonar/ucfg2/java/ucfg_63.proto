@@ -1,0 +1,29 @@
+
+bcom.vatas.model.dtos.Cliente#removeVenta(Lcom/vatas/model/dtos/Venta;)Lcom/vatas/model/dtos/Venta;
+__unknown_file ("1*†
+1k
+_A:\eclipse-workspace-foton\concesionario_spring\src\main\java\com\vatas\model\dtos\Cliente.javaö ö(ÌÍ
+k
+_A:\eclipse-workspace-foton\concesionario_spring\src\main\java\com\vatas\model\dtos\Cliente.javaö ö(
+%0java.util.Set"7com.vatas.model.dtos.Cliente#getVentas()Ljava/util/Set;* 
+com.vatas.model.dtos.Cliente2getVentas()ÑÅ
+k
+_A:\eclipse-workspace-foton\concesionario_spring\src\main\java\com\vatas\model\dtos\Cliente.javaö ö(
+%1boolean")java.util.Set#remove(Ljava/lang/Object;)Z*
+
+%0java.util.Set*%
+#
+ventacom.vatas.model.dtos.Venta2remove(Ljava/lang/Object;)üú
+k
+_A:\eclipse-workspace-foton\concesionario_spring\src\main\java\com\vatas\model\dtos\Cliente.javaõ õ(
+
+%2void"Fcom.vatas.model.dtos.Venta#setCliente(Lcom/vatas/model/dtos/Cliente;)V*%
+#
+ventacom.vatas.model.dtos.Venta*
+""2*setCliente(Lcom/vatas/model/dtos/Cliente;)"î
+k
+_A:\eclipse-workspace-foton\concesionario_spring\src\main\java\com\vatas\model\dtos\Cliente.javaù ù(%
+#
+ventacom.vatas.model.dtos.Venta:#
+ventacom.vatas.model.dtos.VentaB 
+com.vatas.model.dtos.Cliente

@@ -1,0 +1,61 @@
+
+bcom.vatas.model.daos.ClienteDao#consultarCliente(Ljava/lang/String;)Lcom/vatas/model/dtos/Cliente;
+__unknown_file ("paramAnnotations*Ì
+paramAnnotationsl
+bA:\eclipse-workspace-foton\concesionario_spring\src\main\java\com\vatas\model\daos\ClienteDao.java8  8(2º
+π
+l
+bA:\eclipse-workspace-foton\concesionario_spring\src\main\java\com\vatas\model\daos\ClienteDao.java7 7(
+
+%4"
+__annotate*
+java.lang.Override*
+
+	idClientejava.lang.String¶
+£
+l
+bA:\eclipse-workspace-foton\concesionario_spring\src\main\java\com\vatas\model\daos\ClienteDao.java8( 8(1
+	idClientejava.lang.String"__annotation*
+
+%4*
+1*Å
+1l
+bA:\eclipse-workspace-foton\concesionario_spring\src\main\java\com\vatas\model\daos\ClienteDao.java:( :(*À
+»
+l
+bA:\eclipse-workspace-foton\concesionario_spring\src\main\java\com\vatas\model\daos\ClienteDao.java:( :(*%
+%0javax.persistence.EntityManager"__id*+*)!
+com.vatas.model.daos.ClienteDao"
+emîë
+l
+bA:\eclipse-workspace-foton\concesionario_spring\src\main\java\com\vatas\model\daos\ClienteDao.java:( :(j"
+%1javax.persistence.TypedQuery"sjavax.persistence.EntityManager#createNamedQuery(Ljava/lang/String;Ljava/lang/Class;)Ljavax/persistence/TypedQuery;*'
+%
+%0javax.persistence.EntityManager* 
+Cliente.findByIdentificacion*
+""25createNamedQuery(Ljava/lang/String;Ljava/lang/Class;)Œ
+À
+l
+bA:\eclipse-workspace-foton\concesionario_spring\src\main\java\com\vatas\model\daos\ClienteDao.java: :(k/
+consultaclientejavax.persistence.TypedQuery"__id*$
+"
+%1javax.persistence.TypedQuery†ù
+l
+bA:\eclipse-workspace-foton\concesionario_spring\src\main\java\com\vatas\model\daos\ClienteDao.java; ;(;"
+%2javax.persistence.TypedQuery"mjavax.persistence.TypedQuery#setParameter(Ljava/lang/String;Ljava/lang/Object;)Ljavax/persistence/TypedQuery;*1
+/
+consultaclientejavax.persistence.TypedQuery*
+identificacion*
+
+	idClientejava.lang.String22setParameter(Ljava/lang/String;Ljava/lang/Object;)ùö
+l
+bA:\eclipse-workspace-foton\concesionario_spring\src\main\java\com\vatas\model\daos\ClienteDao.java<	 <(*"
+%3com.vatas.model.dtos.Cliente"@javax.persistence.TypedQuery#getSingleResult()Ljava/lang/Object;*1
+/
+consultaclientejavax.persistence.TypedQuery2getSingleResult()"î
+l
+bA:\eclipse-workspace-foton\concesionario_spring\src\main\java\com\vatas\model\daos\ClienteDao.java< <(+$
+"
+%3com.vatas.model.dtos.Cliente:
+	idClientejava.lang.StringB#!
+com.vatas.model.daos.ClienteDao
