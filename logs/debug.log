@@ -1,5 +1,0 @@
--- [INFO ]|2019-03-27 mié, 27 mar 12:20:18.991|INFO|File: LogInfo.java|[LogInfo - log:line 15]|[main] Message: hola
--- [DEBUG]|2019-03-27 mié, 27 mar 12:20:19.098|DEBUG|File: DebugLogger.java|[DebugLogger - log:line 15]|[main] Message: KAREN
--- [ERROR]|2019-03-27 mié, 27 mar 12:20:19.169|ERROR|File: LogError.java|[LogError - log:line 15]|[main] Message: CRISTHIAN
--- [WARN ]|2019-03-27 mié, 27 mar 12:20:19.289|WARN|File: LogWarn.java|[LogWarn - log:line 15]|[main] Message: BRAYAN Y KAREN 
--- [FATAL]|2019-03-27 mié, 27 mar 12:20:19.339|FATAL|File: LogFatal.java|[LogFatal - log:line 15]|[main] Message: se aman
